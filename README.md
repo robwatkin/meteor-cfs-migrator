@@ -98,6 +98,14 @@ Now build and run your app to complete the migration in three (actually four) st
       }
     }
 
+To know when the copy operation has completed, watch the log file for:
+
+    StoreMigrator.perform.copyStore pics COMPLETED all files copied
+
+and if you're controlling the parallelism with optionsdebug == true:
+
+    StoreMigrator.perform.copyStore pics process queue ended
+
 #### Step 3:
 (Meteor.settings)
 
@@ -109,13 +117,9 @@ Now build and run your app to complete the migration in three (actually four) st
       }
     }
 
-To know when the migration has completed, watch the log file for:
+To know when the purge operation has completed, watch the log file for:
 
-    StoreMigrator.perform.copyStore pics all files copied
-
-and if you're controlling the parallelism:
-
-    StoreMigrator.perform.copyStore pics process queue ended
+    StoreMigrator.perform.purgeStore post-pics COMPLETED n files purged
 
 #### Step 4:
 (Meteor.settings)

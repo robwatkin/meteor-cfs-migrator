@@ -1,6 +1,6 @@
 Package.describe({
   name: 'robsw:cfs-migrator',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'Migrate files between FS.Collection stores',
   git: 'https://github.com/robwatkin/meteor-cfs-migrator',
   documentation: 'README.md'
