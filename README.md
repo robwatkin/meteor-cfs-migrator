@@ -119,7 +119,7 @@ and if you're controlling the parallelism with optionsdebug == true:
 
 To know when the purge operation has completed, watch the log file for:
 
-    StoreMigrator.perform.purgeStore post-pics COMPLETED n files purged
+    StoreMigrator.perform.purgeStore pics COMPLETED n files purged
 
 #### Step 4:
 (Meteor.settings)
