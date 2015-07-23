@@ -143,7 +143,7 @@ FS.Collection.StoreMigrator.prototype.perform = function (oldStore, newStore) {
                               + ' newStoreCount: ' + newStoreCount);
 
     } else {
-      degug && console.log('StoreMigrator.perform.purgeStore NO ACTION necessary');
+      debug && console.log('StoreMigrator.perform.purgeStore NO ACTION necessary');
     }
   }
 
